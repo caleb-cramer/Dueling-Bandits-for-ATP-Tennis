@@ -4,7 +4,7 @@
 **Date:** March 16, 2026
 
 ## 🎾 Executive Summary
-This project applies an online learning framework to historical ATP match data (2008–2023) to identify optimal tennis players across varying environmental contexts (court surfaces). By treating players as "arms" in a **Dueling Bandit** problem, the system converges on the best candidates using relative preference feedback rather than noisy absolute rewards.
+This project applies an online learning framework to historical ATP match data (2008–2023) from [Kaggle](https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull) to identify optimal tennis players across varying environmental contexts (court surfaces). By treating players as "arms" in a **Dueling Bandit** problem, the system converges on the best candidates using relative preference feedback rather than noisy absolute rewards.
 
 ## 🛠 High-Signal Technical Challenges
 
