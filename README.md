@@ -3,10 +3,10 @@
 **Final Project - CSE541** **Author:** Caleb Cramer  
 **Date:** March 16, 2026
 
-## 🎾 Executive Summary
+## Executive Summary
 This project applies an online learning framework to historical ATP match data (2008–2023) from [Kaggle](https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull) to identify optimal tennis players across varying environmental contexts (court surfaces). By treating players as "arms" in a **Dueling Bandit** problem, the system converges on the best candidates using relative preference feedback rather than noisy absolute rewards.
 
-## 🛠 High-Signal Technical Challenges
+## High-Signal Technical Challenges
 
 ### 1. Handling Condorcet Cycles
 Real-world data often lacks a "Condorcet Winner"—a player who defeats every other opponent individually. On Grass and Hard courts, "rock-paper-scissors" cycles were identified (e.g., Federer > Nadal > Djokovic > Federer).
@@ -23,7 +23,7 @@ The professional tour is non-stationary; new talent constantly enters the pool. 
 
 ---
 
-## 🔬 Evaluated Algorithms
+## Evaluated Algorithms
 
 ### Borda-UCB (Context-Free)
 * **Mechanism**: Maintains empirical Borda scores $\hat{b}_{i}$ and selects players using a standard Upper Confidence Bound: $U_{i}=\hat{b}_{i}+\alpha\sqrt{\ln t/N_{i}}$.
@@ -36,7 +36,7 @@ The professional tour is non-stationary; new talent constantly enters the pool. 
 
 ---
 
-## 📊 Performance Results
+## Performance Results
 
 ### Cumulative Regret Analysis
 The contextual model (LinUCB) significantly outperformed the context-free baseline, particularly during the "Next Gen" injection.
@@ -56,7 +56,7 @@ The contextual model (LinUCB) significantly outperformed the context-free baseli
 
 ---
 
-## ⚙️ Implementation Details
+## Implementation Details
 * **Languages/Tools**: Python, NumPy, Pandas, Matplotlib.
 * **Math Foundations**: Ridge regression for weight estimation ($\hat{\theta}=A^{-1}b$) and Cumulative Strong Regret ($R_{T}$) for evaluation.
 
